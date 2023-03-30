@@ -1,11 +1,3 @@
-% fatos sobre os Pokémons da primeira geração
-
-pokemon(charmander, fogo, [charmeleon, charizard], [39, 52, 43, 60, 50, 65]).
-pokemon(bulbasaur, grama_venenoso, [ivysaur, venusaur], [45, 49, 49, 65, 65, 45]).
-pokemon(squirtle, agua, [wartortle, blastoise], [44, 48, 65, 50, 64, 43]).
-pokemon(pikachu, eletrico, [raichu], [35, 55, 30, 50, 40, 90]).
-pokemon(mewtwo, psiquico, [], [106, 110, 90, 154, 90, 130]).
-pokemon(snorlax, normal, [], [160, 110, 65, 65, 110, 30]).
 
 % regras para responder as perguntas do usuário
 
