@@ -267,17 +267,9 @@ responder(Pokemon, tudo) :-
 
 % regra para receber entrada do usuário e chamar a regra "responder" correspondente
 
-perguntar_continuar :-
-    write("Deseja continuar? (s/n)"), nl,
-    read(Resposta),
-    (   Resposta = 's'
-    ->  iniciar
-    ;   Resposta = 'n'
-    ->  true
-    ;   perguntar_continuar
-    ).
 
-% regra principal para receber entrada do usuário e chamar a regra "responder" correspondente
+run :- iniciar, !.
+run :- write("O chatbot foi finalizado."), nl.
 
 iniciar :- 
     write("Digite o nome de um Pokémon da primeira geração: "), nl,
@@ -287,39 +279,14 @@ iniciar :-
     responder(Pokemon, Adicional),
     perguntar_continuar.
 
-% executar o chatbot
+% regras para receber entrada do usuário e chamar a regra "responder" correspondente
 
-:- initialization(iniciar).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+perguntar_continuar :-
+    write("Deseja continuar? (s/n)"), nl,
+    read(Resposta),
+    (   Resposta = 's'
+    ->  iniciar
+    ;   Resposta = 'n'
+    ->  true
+    ;   perguntar_continuar
+    ).
