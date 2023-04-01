@@ -235,8 +235,8 @@ responder(Pokemon, status) :-
     pokemon(Pokemon, _, _, Status, _),
     format("~w tem os seguintes status: ~w.\n", [Pokemon, Status]), nl.
 
-responder(Pokemon, fraquesas) :-
-    pokemon(Pokemon, _, _, _, Fraquesas),
+responder(Pokemon, fraquezas) :-
+    pokemon(Pokemon, _, _, _, Fraquezas),
     format("~w é fraco contra os tipos: ~w.\n", [Pokemon, Fraquesas]), nl.
 
 responder(Pokemon, tudo) :-
@@ -256,11 +256,11 @@ responder(Pokemon, tudo) :-
             Velocidade  -------------- ~w \n\n", 
            Status),
     
-    (   Fraquesas = []
+    (   Fraquezas = []
     ->  format("~w não tem evolução.", [Pokemon]), nl
     ;   format("~w é fraco contra os tipos:", 
                Pokemon),
-        format("~w \n", [Fraquesas]), nl
+        format("~w \n", [Fraquezas]), nl
     ).
 
 
@@ -274,7 +274,7 @@ run :- write("O chatbot foi finalizado."), nl.
 iniciar :- 
     write("Digite o nome de um Pokémon da primeira geração: "), nl,
     read(Pokemon),
-    write("Digite o que gostaria de saber sobre esse Pokémon (ex: tudo, tipo, evolucoes, status ou fraquesas): "), nl,
+    write("Digite o que gostaria de saber sobre esse Pokémon (ex: tudo, tipo, evolucoes, status ou fraquezas): "), nl,
     read(Adicional),
     responder(Pokemon, Adicional),
     perguntar_continuar.
