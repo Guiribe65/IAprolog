@@ -237,10 +237,10 @@ responder(Pokemon, status) :-
 
 responder(Pokemon, fraquezas) :-
     pokemon(Pokemon, _, _, _, Fraquezas),
-    format("~w é fraco contra os tipos: ~w.\n", [Pokemon, Fraquesas]), nl.
+    format("~w é fraco contra os tipos: ~w.\n", [Pokemon, Fraquezas]), nl.
 
 responder(Pokemon, tudo) :-
-    pokemon(Pokemon, Tipo, Evolucoes, Status, Fraquesas),
+    pokemon(Pokemon, Tipo, Evolucoes, Status, Fraquezas),
     format("~w é do tipo ~w.\n", [Pokemon, Tipo]), nl,
     (   Evolucoes = []
     ->  format("~w não tem evolução.", [Pokemon]), nl
@@ -268,16 +268,19 @@ responder(Pokemon, tudo) :-
 % regra para receber entrada do usuário e chamar a regra "responder" correspondente
 
 
-run :- iniciar, !.
-run :- write("O chatbot foi finalizado."), nl.
-
-iniciar :- 
-    write("Digite o nome de um Pokémon da primeira geração: "), nl,
-    read(Pokemon),
-    write("Digite o que gostaria de saber sobre esse Pokémon (ex: tudo, tipo, evolucoes, status ou fraquezas): "), nl,
-    read(Adicional),
-    responder(Pokemon, Adicional),
-    perguntar_continuar.
+main :-
+write("Digite o nome de um Pokémon da primeira geração: "), nl,
+read(Pokemon),
+( Pokemon == quit
+-> write("O chatbot foi finalizado."), nl
+; write("Digite o que gostaria de saber sobre esse Pokémon (ex: tudo, tipo, evolucoes, status ou fraquezas): "), nl,
+read(Adicional),
+( Adicional == quit
+-> write("O chatbot foi finalizado."), nl
+; responder(Pokemon, Adicional),
+perguntar_continuar
+)
+).
 
 % regras para receber entrada do usuário e chamar a regra "responder" correspondente
 
@@ -285,7 +288,7 @@ perguntar_continuar :-
     write("Deseja continuar? (s/n)"), nl,
     read(Resposta),
     (   Resposta = 's'
-    ->  iniciar
+    ->  main
     ;   Resposta = 'n'
     ->  true
     ;   perguntar_continuar
