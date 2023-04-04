@@ -1,0 +1,41 @@
+1º - iniciar o programa com o comando main
+2º - Digitar o nome de um pokemon da primeira geração (Ex: magikarp, charmander, pikachu, articuno, mew e growlithe)
+3º - Digitar o tipo de informação que gostaria de ver(Ex: Tudo, Tipo, fraqueza, evolucoes e status)
+4º - digitar se gostaria de continuar pesquisando ou gostaria de finalizar o chatbot ("s" para sim e "n" para nao)
+
+
+
+Ex:
+
+
+    > main
+
+Digite o nome de um Pokémon da primeira geração:
+    > pikachu
+
+Digite o que gostaria de saber sobre esse Pokémon (ex: tudo, tipo, evolucoes, status ou fraquesas):
+    > tipo
+
+Deseja continuar? (s/n)
+    > s
+
+Digite o nome de um Pokémon da primeira geração:
+    > charmander
+
+Digite o que gostaria de saber sobre esse Pokémon (ex: tudo, tipo, evolucoes, status ou fraquesas):
+    > status
+
+Deseja continuar? (s/n)
+    > s
+
+Digite o nome de um Pokémon da primeira geração:
+    > growlithe
+
+Digite o que gostaria de saber sobre esse Pokémon (ex: tudo, tipo, evolucoes, status ou fraquesas):
+    > tudo
+
+Deseja continuar? (s/n)
+    > n
+
+true
+
