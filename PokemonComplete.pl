@@ -268,7 +268,7 @@ responder(Pokemon, tudo) :-
 % regra para receber entrada do usuário e chamar a regra "responder" correspondente
 
 
-main :-
+main :-dashdaishsakjhdajkshdaskj
 write("Digite o nome de um Pokémon da primeira geração: "), nl,
 read(Pokemon),
 ( Pokemon == quit
