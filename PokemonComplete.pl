@@ -290,6 +290,7 @@ perguntar_continuar :-
     (   Resposta = 's'
     ->  main
     ;   Resposta = 'n'
-    ->  true
+    ->  write("O chatbot foi finalizado."),
+        true
     ;   perguntar_continuar
     ).
