@@ -1,0 +1,12 @@
+Requistos para o projeto
+
+Que problema deve ser resolvido?
+Ter um controle de entrada e saida de veiculos da univap
+Que dados existem? 
+quantos carros aproximadamente estao vinculados aos funcionarios (professores, prestadores de serviço e vans) e alunos, temdo um controle de quem são "visitantes" ou não
+Onde você pode obter esses dados? São públicos? 
+com a propria univap e são dados publicos
+Existem preocupações com a privacidade?
+Sim á uma preocupação 
+É estruturado ou não estruturado?
+é estruturado 
