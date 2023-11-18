@@ -2,7 +2,7 @@
 
 public class Player : MonoBehaviour
 {
-    public float Velocidade = 10f;
+    public float Velocidade = 90f;
     public float SensibilidadeMouse = 2f;
 
     private Animator anim;
@@ -23,8 +23,7 @@ public class Player : MonoBehaviour
             transform.Translate(new Vector3(0, 0, 1) * Time.deltaTime * Velocidade);
             anim.SetBool("Correndo", true);
         }
-
-        if (Input.GetKeyUp(KeyCode.W))
+        else
         {
             anim.SetBool("Correndo", false);
         }
@@ -46,6 +45,24 @@ public class Player : MonoBehaviour
         else
         {
             anim.SetBool("Ce", false);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            anim.SetBool("Re", true);
+        }
+        else
+        {
+            anim.SetBool("Re", false);
+        }
+
+        if (Input.GetKey(KeyCode.M))
+        {
+            anim.SetBool("Dança", true);
+        }
+        else
+        {
+            anim.SetBool("Dança", false);
         }
 
 

@@ -1,16 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Chaves : MonoBehaviour
 {
-    // Função chamada quando um objeto entra no trigger deste objeto
+    private int x = 0;
+
     private void OnTriggerEnter(Collider other)
     {
-        // Verifica se o objeto que entrou em contato possui uma tag específica (pode ser ajustado conforme necessário)
         if (other.CompareTag("Chave1"))
+
         {
-            Destroy(gameObject);
+            Destroy(other.gameObject);
+            GameController.gc.SetChave(1);
+
+            x = GameController.gc.GetChave();
+            Debug.Log(x);
+ 
+                // Verifica se todas as chaves foram destruídas
+                if (x >= 3)
+                {
+                    Debug.Log("Todas as chaves foram destruídas. Carregando Fase2...");
+                    LiberarAcessoFase2();
+                }  
+            
         }
+
+    }
+
+    private void LiberarAcessoFase2()
+    {
+        // Certifique-se de que "Fase2" é o nome correto da cena no Build Settings
+        SceneManager.LoadScene("Fase2");
     }
 }
