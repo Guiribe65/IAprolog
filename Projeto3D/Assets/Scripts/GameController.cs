@@ -1,27 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
-public class GameController : MonoBehaviour {
-
+public class GameController : MonoBehaviour
+{
     public static GameController gc;
-    //public Text lifeText;
-    public int chaves = 0;
+    public int chaves;
 
-    public void SetChave (int chave)
+    void Awake()
     {
-        chaves = chaves + chave;
+        if (gc == null)
+        {
+            gc = this;
 
-          
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (gc != this)
+        {
+            setChaves(gc.chaves);
+            Destroy(gameObject);
+        }
     }
-
-    public int GetChave()
+    public void setChaves(int chave)
+    {
+        chaves += chave;
+    }
+    public int getChaves()
     {
         return chaves;
     }
 
-    //public void RefreshScreen()
-    //{
-    //    lifeText.text = lives.ToString();
-    //}
+
 }

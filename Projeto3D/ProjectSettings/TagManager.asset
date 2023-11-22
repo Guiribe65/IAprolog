@@ -8,6 +8,8 @@ TagManager:
   - Floor
   - Chave3
   - Chave2
+  - Coin
+  - chave
   layers:
   - Default
   - TransparentFX
