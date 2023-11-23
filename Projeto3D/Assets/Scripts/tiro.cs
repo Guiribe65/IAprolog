@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class tiro : MonoBehaviour
 {
     private Rigidbody rb;
+    public int vidaBoss;
 
     void Start()
     {
@@ -46,6 +48,18 @@ public class tiro : MonoBehaviour
 
             // Destruir o projetil
             Destroy(gameObject);
+        }
+        if (other.CompareTag("Boss"))
+        {
+            vidaBoss = GameController.gc.getVidaBoss();
+
+            if (vidaBoss > 0)
+            {
+                GameController.gc.setVidaBoss(1);
+            }else if(vidaBoss == 0)
+            {
+                Destroy(other.gameObject);
+            }
         }
     }
 }

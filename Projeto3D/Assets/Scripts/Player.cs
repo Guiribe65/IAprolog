@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     public float Velocidade = 90f;
     public float SensibilidadeMouse = 2f;
-
+    public int vidaPlayer;
     private Animator anim;
 
     // Use this for initialization
@@ -14,7 +15,21 @@ public class Player : MonoBehaviour
         // Desativa o cursor para que ele não fique visível e restrinja-o ao centro da tela
         Cursor.lockState = CursorLockMode.Locked;
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Inimigo")
+        {
+            vidaPlayer = GameController.gc.getVida();
+            if (vidaPlayer > 0)
+            {
 
+            GameController.gc.setVida(1);
+            }else if(vidaPlayer == 0)
+            {
+                SceneManager.LoadScene("Final");
+            }
+        }
+    }
     void movimentacao()
     {
         // Movimento para frente (tecla W)

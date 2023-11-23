@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Cenas/Projeto3D.unity
+    path: Assets/Cenas/Inicial.unity
+    guid: abad301ebde05e54395a4693de165a34
+  - enabled: 1
+    path: Assets/Cenas/Fase1.unity
     guid: ee6e22183ab5c2f47b67c44403b86adc
   - enabled: 1
     path: Assets/Cenas/Fase2.unity
@@ -14,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/Fase3.unity
     guid: fe7de300427c628449520b1497039462
+  - enabled: 1
+    path: Assets/Cenas/Final.unity
+    guid: 0ed2a523bf3600f45a06a7339e000b2b
