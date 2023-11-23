@@ -21,9 +21,9 @@ public class Chaves : MonoBehaviour
         {
             Destroy(other.gameObject);
             //gameController.setChaves(1);
-            Debug.Log("TO AQUI CARALHO POHA DESGRACA PUTA QUE PARIU");
+            //Debug.Log("TO AQUI CARALHO POHA DESGRACA PUTA QUE PARIU");
             GameController.gc.setChaves(1);
-            
+
         }
     }
 }

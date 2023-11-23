@@ -3,22 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PassagemFase1 : MonoBehaviour {
+public class PassagemFase1 : MonoBehaviour
+{
     Renderer ren;
     public GameObject gameObject;
 
     // Use this for initialization
-    void Start () {
-        ren=GetComponent<Renderer>();
+    void Start()
+    {
+        ren = GetComponent<Renderer>();
         ren.enabled = false;
-        Debug.Log("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"+gameObject.name);
+        Debug.Log("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH" + gameObject.name);
         gameObject.GetComponent<BoxCollider>().enabled = false;
 
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             LiberarAcessoFase2();
         }
@@ -31,10 +33,11 @@ public class PassagemFase1 : MonoBehaviour {
         SceneManager.LoadScene("Fase2");
     }
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         int x = GameController.gc.getChaves();
 
-        if(x == 3)
+        if (x == 3)
         {
             ren.enabled = true;
             gameObject.GetComponent<BoxCollider>().enabled = true;

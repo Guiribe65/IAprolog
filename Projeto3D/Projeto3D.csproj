@@ -242,12 +242,15 @@
     <Compile Include="Assets\MazeGenerator\Scripts\RecursiveTreeMazeGenerator.cs" />
     <Compile Include="Assets\MazeGenerator\Scripts\RollerBall.cs" />
     <Compile Include="Assets\MazeGenerator\Scripts\TreeMazeGenerator.cs" />
+    <Compile Include="Assets\Scripts\Atira.cs" />
     <Compile Include="Assets\Scripts\Chaves.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Inimigo.cs" />
     <Compile Include="Assets\Scripts\PassagemFase1.cs" />
+    <Compile Include="Assets\Scripts\PassagemFase2.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PrimeiraP.cs" />
+    <Compile Include="Assets\Scripts\tiro.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
