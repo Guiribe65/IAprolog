@@ -9,6 +9,8 @@ TagManager:
   - Chave3
   - Chave2
   - Inimigo
+  - Coin
+  - chave
   layers:
   - Default
   - TransparentFX

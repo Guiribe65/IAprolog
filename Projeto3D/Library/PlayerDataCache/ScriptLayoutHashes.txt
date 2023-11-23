@@ -1,9 +1,10 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/Dell/Desktop/Projeto3D/Game.exe
+C:/Users/pedro/OneDrive/Área de Trabalho/Pastas/IAprolog/Projeto3D/Game.exe
 SceneListBegin?
-Assets/Projeto3D.unity
-Assets/Fase2.unity
+Assets/Cenas/Projeto3D.unity
+Assets/Cenas/Fase2.unity
+Assets/Cenas/Fase3.unity
 SceneListEnd?
 1e5a07e5a19e9ca269fab3020d683620 Assembly-CSharp.dll:.MazeSpawner
 ed6b0cebe8e6b939eacb94c209ba4e9c Assembly-CSharp.dll:.Player
@@ -119,6 +120,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 070e78ac8e6a2e6c8cd35f94e0f32e15 Assembly-CSharp.dll:.RollerBall
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Chaves
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.tiro
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -151,4 +153,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 ed6b0cebe8e6b939eacb94c209ba4e9c Assembly-CSharp.dll:.PrimeiraP
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+fdca56a5b0fa0527c26e1d494533d69f Assembly-CSharp.dll:.GameController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Inimigo
+ce8fdc471db56b196d3e01e917d8f9df Assembly-CSharp.dll:.Atira
+17da1343750adaac8916f111670d5a82 Assembly-CSharp.dll:.PassagemFase1

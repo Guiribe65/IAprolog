@@ -3,33 +3,27 @@ using UnityEngine.SceneManagement;
 
 public class Chaves : MonoBehaviour
 {
+    //private GameController gameController; // Assign the GameController object to this variable in the Inspector window
+
     private int x = 0;
+
+    //private void Awake()
+    //{
+    //    if (gameController == null)
+    //    {
+    //        Debug.LogError("GameController object not found. Please assign the GameController object to the 'gameController' variable in the Inspector window.");
+    //    }
+    //}
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Chave1"))
-
+        if (other.gameObject.tag == "chave")
         {
             Destroy(other.gameObject);
-            GameController.gc.SetChave(1);
+            //gameController.setChaves(1);
+            //Debug.Log("TO AQUI CARALHO POHA DESGRACA PUTA QUE PARIU");
+            GameController.gc.setChaves(1);
 
-            x = GameController.gc.GetChave();
-            Debug.Log(x);
- 
-                // Verifica se todas as chaves foram destruídas
-                if (x >= 3)
-                {
-                    Debug.Log("Todas as chaves foram destruídas. Carregando Fase2...");
-                    LiberarAcessoFase2();
-                }  
-            
         }
-
-    }
-
-    private void LiberarAcessoFase2()
-    {
-        // Certifique-se de que "Fase2" é o nome correto da cena no Build Settings
-        SceneManager.LoadScene("Fase2");
     }
 }
