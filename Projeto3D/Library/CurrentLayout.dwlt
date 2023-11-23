@@ -40,8 +40,8 @@ MonoBehaviour:
     y: 0
     width: 367
     height: 627
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 22}
@@ -49,7 +49,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 16}
   m_Selected: 1
-  m_LastSelected: 0
+  m_LastSelected: 2
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 204
     height: 627
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -96,8 +96,8 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 627
-  m_MinSize: {x: 713, y: 392}
-  m_MaxSize: {x: 18008, y: 14042}
+  m_MinSize: {x: 709, y: 392}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
   controlID: 11
 --- !u!114 &5
@@ -276,9 +276,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.107422, y: 45.61621, z: 63.335938}
+    m_Target: {x: 148.54688, y: 63.179688, z: 117.62109}
     speed: 2
-    m_Value: {x: 6.107422, y: 45.61621, z: 63.335938}
+    m_Value: {x: 148.54688, y: 63.179688, z: 117.62109}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -302,13 +302,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.24190532, y: -0.6281922, z: 0.21474865, w: -0.7076308}
+    m_Target: {x: 0.19231717, y: -0.58688897, z: 0.14604868, w: 0.7728163}
     speed: 2
-    m_Value: {x: -0.2419051, y: -0.6281916, z: 0.21474844, w: -0.70763016}
+    m_Value: {x: 0.1923172, y: -0.586889, z: 0.1460487, w: 0.7728164}
   m_Size:
-    m_Target: 12.941081
+    m_Target: 91.62001
     speed: 2
-    m_Value: 12.941081
+    m_Value: 91.62001
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -386,19 +386,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Kunai/Resources/Prefabs
+    - Assets/Cenas
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Kunai/Resources/Prefabs
+  - Assets/Cenas
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Dell\Desktop\Projeto3D
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: d62c0000
-    m_LastClickedID: 11478
-    m_ExpandedIDs: 00000000ac2700009c280000ae290000d42c0000da2c0000de2c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 63}
+    m_SelectedIDs: 7e2e0000
+    m_LastClickedID: 11902
+    m_ExpandedIDs: 00000000a4270000b02700009a280000a6280000f4280000c229000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -426,7 +426,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac270000
+    m_ExpandedIDs: 00000000a4270000b02700009a280000a6280000f4280000c2290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -538,10 +538,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 998
-    y: 100
-    width: 360
-    height: 590
+    x: 1001
+    y: 92
+    width: 365
+    height: 606
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &16
 MonoBehaviour:
@@ -703,9 +703,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1cb7feff
-    m_LastClickedID: 0
-    m_ExpandedIDs: b21ffcff9022fcff2625fcffa227fcff3a3ffcfffa21ffffdc2bffff4630ffffa232ffff4640ffff444fffff245cffff5e69ffff3e76ffff5683ffff0ca6ffffe8b3ffff4ed1ffffe0d3ffff84fbffff00000000fc3a0000ee0901000a1a01006a1a0100761a0100
+    m_SelectedIDs: 3a110100
+    m_LastClickedID: 69946
+    m_ExpandedIDs: 48cef7ffe8e9f7ff9ea3f8ffd8aef8ffeed1f8ffd856f9ff422efaff4a77faffd884fbff3287fbffb896fbffdae2fbff24fcfbffb43bfcff043efcffac4ffcff40c1fcff3aa7fffffaa9ffff2eacffff3ccaffffa2fbffff00000000da3000009cbf0000bed200008ad400002eff0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -724,7 +724,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 3}
     m_SearchString: 
   m_ExpandedScenes:
-  - Fase2
+  - Fase3
   m_CurrenRootInstanceID: 0
   m_Locked: 1
   m_CurrentSortingName: TransformSorting
@@ -849,7 +849,7 @@ MonoBehaviour:
     width: 365
     height: 606
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 240}
+  m_ScrollPosition: {x: 0, y: 170.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
