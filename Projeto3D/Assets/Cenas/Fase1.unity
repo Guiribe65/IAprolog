@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5500975, g: 0.78110564, b: 0.7772836, a: 1}
+  m_IndirectSpecularColor: {r: 0.55023694, g: 0.7810118, b: 0.7773566, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -442,7 +442,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 619351483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1083, y: 9.1, z: 272}
+  m_LocalPosition: {x: -759, y: 9.1, z: 272}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
@@ -780,12 +780,17 @@ Prefab:
     - target: {fileID: 9500000, guid: 8fc372bf0600302429a2e00d5bf19bad, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 0f31a0b4e25e3dd41aa7ec5729d8fd56, type: 2}
     - target: {fileID: 100000, guid: 8fc372bf0600302429a2e00d5bf19bad, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9500000, guid: 8fc372bf0600302429a2e00d5bf19bad, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: b82474faa90af8445ba086e8455f3a4f, type: 3}
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 8fc372bf0600302429a2e00d5bf19bad, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8fc372bf0600302429a2e00d5bf19bad, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &775868557
@@ -890,6 +895,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaves: 0
+  vidaBoss: 10
+  vida: 3
 --- !u!114 &849019653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,7 +1132,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1005236164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.039998375, y: 1.89, z: 0.1}
+  m_LocalPosition: {x: -0.039998375, y: 1.89, z: 0.15}
   m_LocalScale: {x: 0.06666667, y: 0.06666668, z: 0.06666668}
   m_Children: []
   m_Father: {fileID: 1041399106}
@@ -1140,11 +1147,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7691534562c35814bbf4c62d191a18cf, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1198,7 +1205,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1241,6 +1248,23 @@ CapsuleCollider:
   m_Height: 1.9666853
   m_Direction: 1
   m_Center: {x: 0.003930664, y: 0.99221134, z: -0.029836783}
+--- !u!95 &1041399104
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1041399101}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b82474faa90af8445ba086e8455f3a4f, type: 3}
+  m_Controller: {fileID: 9100000, guid: d3d795578be788b448a254e1e1f6e1b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!54 &1041399105
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1567,7 +1591,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539327596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -779, y: 9.1, z: -2}
+  m_LocalPosition: {x: -818, y: 9.1, z: 132}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1757,7 +1781,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1973993244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1156, y: 9.1, z: -82}
+  m_LocalPosition: {x: -1113, y: 9.1, z: 69}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}

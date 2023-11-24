@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/pedro/OneDrive/Área de Trabalho/Pastas/IAprolog/Projeto3D/Game.exe
+C:/Users/Dell/Desktop/IAprolog/Projeto3D/Game.exe
 SceneListBegin?
 Assets/Cenas/Inicial.unity
 Assets/Cenas/Fase1.unity
@@ -9,7 +9,7 @@ Assets/Cenas/Fase3.unity
 Assets/Cenas/Final.unity
 SceneListEnd?
 1e5a07e5a19e9ca269fab3020d683620 Assembly-CSharp.dll:.MazeSpawner
-ed6b0cebe8e6b939eacb94c209ba4e9c Assembly-CSharp.dll:.Player
+c2dc1a7bc4731f347bbea6e2dc9aeb26 Assembly-CSharp.dll:.Player
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -156,9 +156,9 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 ed6b0cebe8e6b939eacb94c209ba4e9c Assembly-CSharp.dll:.PrimeiraP
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-2e8ada275a78a536f15cd561711cb49e Assembly-CSharp.dll:.GameController
+f09918ec67ad15a1c46a2045a547ac7a Assembly-CSharp.dll:.GameController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Inimigo
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ComecarJogo
+17da1343750adaac8916f111670d5a82 Assembly-CSharp.dll:.trofeu
 ce8fdc471db56b196d3e01e917d8f9df Assembly-CSharp.dll:.Atira
 17da1343750adaac8916f111670d5a82 Assembly-CSharp.dll:.PassagemFase2
-17da1343750adaac8916f111670d5a82 Assembly-CSharp.dll:.trofeu
